@@ -9,7 +9,9 @@ class IncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomBackgroundContainer(
-      child: Column(children: [IncomeHeader(), IncomeSectionBody()]),
+      child: SingleChildScrollView(
+        child: Column(children: [IncomeHeader(), IncomeSectionBody()]),
+      ),
     );
   }
 }
