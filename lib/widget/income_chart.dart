@@ -9,7 +9,7 @@ class IncomeChart extends StatefulWidget {
 }
 
 class _IncomeChartState extends State<IncomeChart> {
-  int actineIndex = -1;
+  int activeIndex = -1;
   @override
   Widget build(BuildContext context) {
     return AspectRatio(aspectRatio: 1, child: PieChart(getChartData()));
@@ -20,7 +20,7 @@ class _IncomeChartState extends State<IncomeChart> {
       pieTouchData: PieTouchData(
         enabled: true,
         touchCallback: (p0, pieTouchResponse) {
-          actineIndex =
+          activeIndex =
               pieTouchResponse?.touchedSection?.touchedSectionIndex ?? -1;
           setState(() {});
         },
@@ -31,25 +31,25 @@ class _IncomeChartState extends State<IncomeChart> {
           showTitle: false,
           value: 40,
           color: Color(0xff208CC8),
-          radius: actineIndex == 0 ? 60 : 50,
+          radius: activeIndex == 0 ? 60 : 50,
         ),
         PieChartSectionData(
           showTitle: false,
           value: 25,
           color: Color(0xff4EB7F2),
-          radius: actineIndex == 1 ? 60 : 50,
+          radius: activeIndex == 1 ? 60 : 50,
         ),
         PieChartSectionData(
           showTitle: false,
           value: 20,
           color: Color(0xff064061),
-          radius: actineIndex == 2 ? 60 : 50,
+          radius: activeIndex == 2 ? 60 : 50,
         ),
         PieChartSectionData(
           showTitle: false,
           value: 22,
           color: Color(0xffE2DECD),
-          radius: actineIndex == 3 ? 60 : 50,
+          radius: activeIndex == 3 ? 60 : 50,
         ),
       ],
     );
