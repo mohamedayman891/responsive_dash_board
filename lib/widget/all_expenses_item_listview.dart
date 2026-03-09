@@ -16,19 +16,19 @@ class _AllExpensesItemListviewState extends State<AllExpensesItemListview> {
     AllExpensesItemModel(
       image: Assets.imagesBalance,
       title: "Balance",
-      data: "April 2022",
+      date: "April 2022",
       price: r"$20,129",
     ),
     AllExpensesItemModel(
       image: Assets.imagesIncome,
       title: "Income",
-      data: "April 2022",
+      date: "April 2022",
       price: r"$20,129",
     ),
     AllExpensesItemModel(
       image: Assets.imagesExpenses,
       title: "Expenses",
-      data: "April 2022",
+      date: "April 2022",
       price: r"$20,129",
     ),
   ];
@@ -102,7 +102,7 @@ class _AllExpensesItemListviewState extends State<AllExpensesItemListview> {
     //         child: Padding(
     //           padding: EdgeInsets.symmetric(horizontal: index == 1 ? 12 : 0),
     //           child: AllExpensesItem(
-    //             itemModel: item,
+    //             itemModel: items,
     //             isSelected: selectedIndex == index,
     //           ),
     //         ),

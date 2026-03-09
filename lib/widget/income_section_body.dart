@@ -10,7 +10,6 @@ class IncomeSectionBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-
     return width >= SizeConfig.desktopLayout && width < 1464
         ? Expanded(
             child: Padding(

@@ -43,7 +43,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
-              itemModel.data,
+              itemModel.date,
               style: AppStyles.styleRegular14(
                 context,
               ).copyWith(color: Color(0xffFAFAFA)),
@@ -97,7 +97,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
-              itemModel.data,
+              itemModel.date,
               style: AppStyles.styleRegular14(context),
             ),
           ),
