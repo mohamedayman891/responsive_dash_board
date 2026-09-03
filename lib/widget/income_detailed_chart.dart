@@ -2,14 +2,14 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
 
-class DetailedIncomeChart extends StatefulWidget {
-  const DetailedIncomeChart({super.key});
+class IncomeDetailedChart extends StatefulWidget {
+  const IncomeDetailedChart({super.key});
 
   @override
-  State<DetailedIncomeChart> createState() => _DetailedIncomeChartState();
+  State<IncomeDetailedChart> createState() => _IncomeDetailedChartState();
 }
 
-class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
+class _IncomeDetailedChartState extends State<IncomeDetailedChart> {
   int activeIndex = -1;
   @override
   Widget build(BuildContext context) {
@@ -64,7 +64,7 @@ class _DetailedIncomeChartState extends State<DetailedIncomeChart> {
           titleStyle: AppStyles.styleMedium16(
             context,
           ).copyWith(color: activeIndex == 3 ? null : Colors.white),
-          value: 22,
+          value: 15,
           color: Color(0xffE2DECD),
           radius: activeIndex == 3 ? 60 : 50,
         ),

@@ -41,12 +41,9 @@ class AllExpensesItemHeader extends StatelessWidget {
           ),
         ),
         const Spacer(),
-        Transform.rotate(
-          angle: -1.57079633 * 2,
-          child: Icon(
-            Icons.arrow_back_ios_new_outlined,
-            color: imageColor ?? Color(0xFF064061),
-          ),
+        Icon(
+          Icons.arrow_forward_ios_outlined,
+          color: imageColor ?? Color(0xFF064061),
         ),
       ],
     );

@@ -17,7 +17,7 @@ class TransectionItem extends StatelessWidget {
           style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
-          transectionModel.data,
+          transectionModel.date,
           style: AppStyles.styleRegular16(
             context,
           ).copyWith(color: Color(0xffAAAAAA)),

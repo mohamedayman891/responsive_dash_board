@@ -29,7 +29,12 @@ class _MyCardSectionState extends State<MyCardSection> {
       children: [
         SizedBox(
           width: 420,
-          child: Text("MyCard", style: AppStyles.styleSemiBold20(context)),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("MyCard", style: AppStyles.styleSemiBold20(context)),
+            ],
+          ),
         ),
         SizedBox(height: 3),
         MyCardPageview(pageController: pageController),

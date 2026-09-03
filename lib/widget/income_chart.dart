@@ -47,7 +47,7 @@ class _IncomeChartState extends State<IncomeChart> {
         ),
         PieChartSectionData(
           showTitle: false,
-          value: 22,
+          value: 15,
           color: Color(0xffE2DECD),
           radius: activeIndex == 3 ? 60 : 50,
         ),

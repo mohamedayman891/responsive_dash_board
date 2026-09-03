@@ -12,6 +12,7 @@ class AllExpensesItemListview extends StatefulWidget {
 }
 
 class _AllExpensesItemListviewState extends State<AllExpensesItemListview> {
+  int selectedIndex = 0;
   final items = [
     AllExpensesItemModel(
       image: Assets.imagesBalance,
@@ -23,16 +24,15 @@ class _AllExpensesItemListviewState extends State<AllExpensesItemListview> {
       image: Assets.imagesIncome,
       title: "Income",
       date: "April 2022",
-      price: r"$20,129",
+      price: r"$15,129",
     ),
     AllExpensesItemModel(
       image: Assets.imagesExpenses,
       title: "Expenses",
       date: "April 2022",
-      price: r"$20,129",
+      price: r"$5,000",
     ),
   ];
-  int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Row(

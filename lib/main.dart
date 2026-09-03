@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widget/dashboard-view.dart';
+import 'package:responsive_dash_board/widget/dash_board_view.dart';
 
 void main() {
   runApp(
@@ -21,7 +21,7 @@ class ResponsiveDashBoard extends StatelessWidget {
         dragDevices: {PointerDeviceKind.touch, PointerDeviceKind.mouse},
       ),
       debugShowCheckedModeBanner: false,
-      home: DashboardView(),
+      home: DashBoardView(),
     );
   }
 }
